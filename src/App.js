@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ReactJsTyping from "reactjs-typing-effect";
 import "./App.css";
 import { Carousel } from "react-responsive-carousel";
@@ -10,8 +10,6 @@ import ador4 from "./bgimages/Ador4.PNG";
 import ador5 from "./bgimages/Ador5.PNG";
 
 function App() {
-  const [toggle, setToggle] = useState(false);
-  const [scroll, setScroll] = useState(false);
   const titles = [
     "Kind",
     "Authentic",
@@ -20,24 +18,6 @@ function App() {
     "Easy-going",
     "Noteworthy",
   ];
-
-  const showBackToTop = () => {
-    if (window.scrollY > 500) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
-
-  window.addEventListener("scroll", showBackToTop);
-
-  const toggleHeader = () => setToggle(!toggle);
-
-  const [active, setActive] = useState(false);
 
   return (
     <React.Fragment>

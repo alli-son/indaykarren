@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactJsTyping from "reactjs-typing-effect";
 import "./App.css";
 import { Carousel } from "react-responsive-carousel";

@@ -21,10 +21,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <section
-        id="home"
-        className={toggle ? "ml330 landing-page" : "landing-page"}
-      >
+      <section id="home" className="landing-page">
         <div>
           <h1>Karren Vergara Pulido</h1>
           <p>
